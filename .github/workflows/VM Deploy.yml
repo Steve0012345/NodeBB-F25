@@ -28,6 +28,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_ADMIN }}
+          # Trigger key auth
           key: ${{ secrets.SSH_KEY }}
           script: | 
             cd code/${{ secrets.REPO_NAME }}
